@@ -1,0 +1,14 @@
+from alpyro_msgs import RosMessage
+from alpyro_msgs.actionlib_msgs.goalid import GoalID
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.control_msgs.singlejointpositiongoal import SingleJointPositionGoal
+
+
+class SingleJointPositionActionGoal(RosMessage):
+  __msg_typ__ = "control_msgs/SingleJointPositionActionGoal"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmFjdGlvbmxpYl9tc2dzL0dvYWxJRCBnb2FsX2lkCiAgdGltZSBzdGFtcAogIHN0cmluZyBpZApjb250cm9sX21zZ3MvU2luZ2xlSm9pbnRQb3NpdGlvbkdvYWwgZ29hbAogIGZsb2F0NjQgcG9zaXRpb24KICBkdXJhdGlvbiBtaW5fZHVyYXRpb24KICBmbG9hdDY0IG1heF92ZWxvY2l0eQoK"
+  __md5_sum__ = "4b0d3d091471663e17749c1d0db90f61"
+
+  header: Header
+  goal_id: GoalID
+  goal: SingleJointPositionGoal

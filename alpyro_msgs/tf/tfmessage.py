@@ -1,0 +1,12 @@
+from typing import List
+from typing_extensions import Annotated
+from alpyro_msgs import RosMessage
+from alpyro_msgs.geometry_msgs.transformstamped import TransformStamped
+
+
+class tfMessage(RosMessage):
+  __msg_typ__ = "tf/tfMessage"
+  __msg_def__ = "Z2VvbWV0cnlfbXNncy9UcmFuc2Zvcm1TdGFtcGVkW10gdHJhbnNmb3JtcwogIHN0ZF9tc2dzL0hlYWRlciBoZWFkZXIKICAgIHVpbnQzMiBzZXEKICAgIHRpbWUgc3RhbXAKICAgIHN0cmluZyBmcmFtZV9pZAogIHN0cmluZyBjaGlsZF9mcmFtZV9pZAogIGdlb21ldHJ5X21zZ3MvVHJhbnNmb3JtIHRyYW5zZm9ybQogICAgZ2VvbWV0cnlfbXNncy9WZWN0b3IzIHRyYW5zbGF0aW9uCiAgICAgIGZsb2F0NjQgeAogICAgICBmbG9hdDY0IHkKICAgICAgZmxvYXQ2NCB6CiAgICBnZW9tZXRyeV9tc2dzL1F1YXRlcm5pb24gcm90YXRpb24KICAgICAgZmxvYXQ2NCB4CiAgICAgIGZsb2F0NjQgeQogICAgICBmbG9hdDY0IHoKICAgICAgZmxvYXQ2NCB3Cgo="
+  __md5_sum__ = "94810edda583a504dfda3829e70d7eec"
+
+  transforms: Annotated[List[TransformStamped], 0, 0]

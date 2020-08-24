@@ -1,0 +1,15 @@
+from typing import List
+from typing_extensions import Annotated
+from alpyro_msgs import RosMessage, int8
+from alpyro_msgs.nav_msgs.mapmetadata import MapMetaData
+from alpyro_msgs.std_msgs.header import Header
+
+
+class OccupancyGrid(RosMessage):
+  __msg_typ__ = "nav_msgs/OccupancyGrid"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCm5hdl9tc2dzL01hcE1ldGFEYXRhIGluZm8KICB0aW1lIG1hcF9sb2FkX3RpbWUKICBmbG9hdDMyIHJlc29sdXRpb24KICB1aW50MzIgd2lkdGgKICB1aW50MzIgaGVpZ2h0CiAgZ2VvbWV0cnlfbXNncy9Qb3NlIG9yaWdpbgogICAgZ2VvbWV0cnlfbXNncy9Qb2ludCBwb3NpdGlvbgogICAgICBmbG9hdDY0IHgKICAgICAgZmxvYXQ2NCB5CiAgICAgIGZsb2F0NjQgegogICAgZ2VvbWV0cnlfbXNncy9RdWF0ZXJuaW9uIG9yaWVudGF0aW9uCiAgICAgIGZsb2F0NjQgeAogICAgICBmbG9hdDY0IHkKICAgICAgZmxvYXQ2NCB6CiAgICAgIGZsb2F0NjQgdwppbnQ4W10gZGF0YQoK"
+  __md5_sum__ = "3381f2d731d4076ec5c71b0759edbe4e"
+
+  header: Header
+  info: MapMetaData
+  data: Annotated[List[int8], 0, 0]

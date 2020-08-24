@@ -1,0 +1,19 @@
+from typing import List
+from typing_extensions import Annotated
+from alpyro_msgs import RosMessage, string
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.geometry_msgs.transform import Transform
+from alpyro_msgs.geometry_msgs.twist import Twist
+from alpyro_msgs.geometry_msgs.wrench import Wrench
+
+
+class MultiDOFJointState(RosMessage):
+  __msg_typ__ = "sensor_msgs/MultiDOFJointState"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCnN0cmluZ1tdIGpvaW50X25hbWVzCmdlb21ldHJ5X21zZ3MvVHJhbnNmb3JtW10gdHJhbnNmb3JtcwogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyB0cmFuc2xhdGlvbgogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegogIGdlb21ldHJ5X21zZ3MvUXVhdGVybmlvbiByb3RhdGlvbgogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegogICAgZmxvYXQ2NCB3Cmdlb21ldHJ5X21zZ3MvVHdpc3RbXSB0d2lzdAogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyBsaW5lYXIKICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKICBnZW9tZXRyeV9tc2dzL1ZlY3RvcjMgYW5ndWxhcgogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegpnZW9tZXRyeV9tc2dzL1dyZW5jaFtdIHdyZW5jaAogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyBmb3JjZQogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyB0b3JxdWUKICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKCg=="
+  __md5_sum__ = "690f272f0640d2631c305eeb8301e59d"
+
+  header: Header
+  joint_names: Annotated[List[string], 0, 0]
+  transforms: Annotated[List[Transform], 0, 0]
+  twist: Annotated[List[Twist], 0, 0]
+  wrench: Annotated[List[Wrench], 0, 0]

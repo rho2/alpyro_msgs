@@ -1,0 +1,14 @@
+from typing import List
+from typing_extensions import Annotated
+from alpyro_msgs import RosMessage
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.geometry_msgs.posestamped import PoseStamped
+
+
+class Path(RosMessage):
+  __msg_typ__ = "nav_msgs/Path"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmdlb21ldHJ5X21zZ3MvUG9zZVN0YW1wZWRbXSBwb3NlcwogIHN0ZF9tc2dzL0hlYWRlciBoZWFkZXIKICAgIHVpbnQzMiBzZXEKICAgIHRpbWUgc3RhbXAKICAgIHN0cmluZyBmcmFtZV9pZAogIGdlb21ldHJ5X21zZ3MvUG9zZSBwb3NlCiAgICBnZW9tZXRyeV9tc2dzL1BvaW50IHBvc2l0aW9uCiAgICAgIGZsb2F0NjQgeAogICAgICBmbG9hdDY0IHkKICAgICAgZmxvYXQ2NCB6CiAgICBnZW9tZXRyeV9tc2dzL1F1YXRlcm5pb24gb3JpZW50YXRpb24KICAgICAgZmxvYXQ2NCB4CiAgICAgIGZsb2F0NjQgeQogICAgICBmbG9hdDY0IHoKICAgICAgZmxvYXQ2NCB3Cgo="
+  __md5_sum__ = "6227e2b7e9cce15051f669a5e197bbf7"
+
+  header: Header
+  poses: Annotated[List[PoseStamped], 0, 0]

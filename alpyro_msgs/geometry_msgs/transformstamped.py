@@ -1,0 +1,13 @@
+from alpyro_msgs import RosMessage, string
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.geometry_msgs.transform import Transform
+
+
+class TransformStamped(RosMessage):
+  __msg_typ__ = "geometry_msgs/TransformStamped"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCnN0cmluZyBjaGlsZF9mcmFtZV9pZApnZW9tZXRyeV9tc2dzL1RyYW5zZm9ybSB0cmFuc2Zvcm0KICBnZW9tZXRyeV9tc2dzL1ZlY3RvcjMgdHJhbnNsYXRpb24KICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKICBnZW9tZXRyeV9tc2dzL1F1YXRlcm5pb24gcm90YXRpb24KICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKICAgIGZsb2F0NjQgdwoK"
+  __md5_sum__ = "b5764a33bfeb3588febc2682852579b0"
+
+  header: Header
+  child_frame_id: string
+  transform: Transform

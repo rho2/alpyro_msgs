@@ -1,0 +1,14 @@
+from typing import List
+from typing_extensions import Annotated
+from alpyro_msgs import RosMessage
+from alpyro_msgs.geometry_msgs.accelwithcovariance import AccelWithCovariance
+from alpyro_msgs.std_msgs.header import Header
+
+
+class AccelWithCovarianceStamped(RosMessage):
+  __msg_typ__ = "geometry_msgs/AccelWithCovarianceStamped"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmdlb21ldHJ5X21zZ3MvQWNjZWxXaXRoQ292YXJpYW5jZSBhY2NlbAogIGdlb21ldHJ5X21zZ3MvQWNjZWwgYWNjZWwKICAgIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyBsaW5lYXIKICAgICAgZmxvYXQ2NCB4CiAgICAgIGZsb2F0NjQgeQogICAgICBmbG9hdDY0IHoKICAgIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyBhbmd1bGFyCiAgICAgIGZsb2F0NjQgeAogICAgICBmbG9hdDY0IHkKICAgICAgZmxvYXQ2NCB6CiAgZmxvYXQ2NFszNl0gY292YXJpYW5jZQoK"
+  __md5_sum__ = "96adb295225031ec8d57fb4251b0a886"
+
+  header: Header
+  accel: AccelWithCovariance

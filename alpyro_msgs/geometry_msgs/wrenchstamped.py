@@ -1,0 +1,12 @@
+from alpyro_msgs import RosMessage
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.geometry_msgs.wrench import Wrench
+
+
+class WrenchStamped(RosMessage):
+  __msg_typ__ = "geometry_msgs/WrenchStamped"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmdlb21ldHJ5X21zZ3MvV3JlbmNoIHdyZW5jaAogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyBmb3JjZQogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegogIGdlb21ldHJ5X21zZ3MvVmVjdG9yMyB0b3JxdWUKICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKCg=="
+  __md5_sum__ = "d78d3cb249ce23087ade7e7d0c40cfa7"
+
+  header: Header
+  wrench: Wrench

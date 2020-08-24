@@ -1,0 +1,15 @@
+from alpyro_msgs import RosMessage, duration, float64, string
+from alpyro_msgs.geometry_msgs.vector3 import Vector3
+from alpyro_msgs.geometry_msgs.pointstamped import PointStamped
+
+
+class PointHeadGoal(RosMessage):
+  __msg_typ__ = "control_msgs/PointHeadGoal"
+  __msg_def__ = "Z2VvbWV0cnlfbXNncy9Qb2ludFN0YW1wZWQgdGFyZ2V0CiAgc3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogICAgdWludDMyIHNlcQogICAgdGltZSBzdGFtcAogICAgc3RyaW5nIGZyYW1lX2lkCiAgZ2VvbWV0cnlfbXNncy9Qb2ludCBwb2ludAogICAgZmxvYXQ2NCB4CiAgICBmbG9hdDY0IHkKICAgIGZsb2F0NjQgegpnZW9tZXRyeV9tc2dzL1ZlY3RvcjMgcG9pbnRpbmdfYXhpcwogIGZsb2F0NjQgeAogIGZsb2F0NjQgeQogIGZsb2F0NjQgegpzdHJpbmcgcG9pbnRpbmdfZnJhbWUKZHVyYXRpb24gbWluX2R1cmF0aW9uCmZsb2F0NjQgbWF4X3ZlbG9jaXR5Cgo="
+  __md5_sum__ = "8b92b1cd5e06c8a94c917dc3209a4c1d"
+
+  target: PointStamped
+  pointing_axis: Vector3
+  pointing_frame: string
+  min_duration: duration
+  max_velocity: float64

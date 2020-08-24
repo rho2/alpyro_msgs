@@ -1,0 +1,15 @@
+from typing import List
+from typing_extensions import Annotated
+from typing import Final
+from alpyro_msgs import RosMessage
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.actionlib_msgs.goalstatus import GoalStatus
+
+
+class GoalStatusArray(RosMessage):
+  __msg_typ__ = "actionlib_msgs/GoalStatusArray"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmFjdGlvbmxpYl9tc2dzL0dvYWxTdGF0dXNbXSBzdGF0dXNfbGlzdAogIHVpbnQ4IFBFTkRJTkc9MAogIHVpbnQ4IEFDVElWRT0xCiAgdWludDggUFJFRU1QVEVEPTIKICB1aW50OCBTVUNDRUVERUQ9MwogIHVpbnQ4IEFCT1JURUQ9NAogIHVpbnQ4IFJFSkVDVEVEPTUKICB1aW50OCBQUkVFTVBUSU5HPTYKICB1aW50OCBSRUNBTExJTkc9NwogIHVpbnQ4IFJFQ0FMTEVEPTgKICB1aW50OCBMT1NUPTkKICBhY3Rpb25saWJfbXNncy9Hb2FsSUQgZ29hbF9pZAogICAgdGltZSBzdGFtcAogICAgc3RyaW5nIGlkCiAgdWludDggc3RhdHVzCiAgc3RyaW5nIHRleHQKCg=="
+  __md5_sum__ = "8b2b82f13216d0a8ea88bd3af735e619"
+
+  header: Header
+  status_list: Annotated[List[GoalStatus], 0, 0]

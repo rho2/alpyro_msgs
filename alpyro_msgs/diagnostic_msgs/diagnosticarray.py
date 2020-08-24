@@ -1,0 +1,15 @@
+from typing import List
+from typing_extensions import Annotated
+from typing import Final
+from alpyro_msgs import RosMessage
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.diagnostic_msgs.diagnosticstatus import DiagnosticStatus
+
+
+class DiagnosticArray(RosMessage):
+  __msg_typ__ = "diagnostic_msgs/DiagnosticArray"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmRpYWdub3N0aWNfbXNncy9EaWFnbm9zdGljU3RhdHVzW10gc3RhdHVzCiAgYnl0ZSBPSz0wCiAgYnl0ZSBXQVJOPTEKICBieXRlIEVSUk9SPTIKICBieXRlIFNUQUxFPTMKICBieXRlIGxldmVsCiAgc3RyaW5nIG5hbWUKICBzdHJpbmcgbWVzc2FnZQogIHN0cmluZyBoYXJkd2FyZV9pZAogIGRpYWdub3N0aWNfbXNncy9LZXlWYWx1ZVtdIHZhbHVlcwogICAgc3RyaW5nIGtleQogICAgc3RyaW5nIHZhbHVlCgo="
+  __md5_sum__ = "60810da900de1dd6ddd437c3503511da"
+
+  header: Header
+  status: Annotated[List[DiagnosticStatus], 0, 0]

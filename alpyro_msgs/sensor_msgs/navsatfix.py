@@ -1,0 +1,24 @@
+from typing import List
+from typing_extensions import Annotated
+from typing import Final
+from alpyro_msgs import RosMessage, float64, uint8
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.sensor_msgs.navsatstatus import NavSatStatus
+
+
+class NavSatFix(RosMessage):
+  __msg_typ__ = "sensor_msgs/NavSatFix"
+  __msg_def__ = "dWludDggQ09WQVJJQU5DRV9UWVBFX1VOS05PV049MAp1aW50OCBDT1ZBUklBTkNFX1RZUEVfQVBQUk9YSU1BVEVEPTEKdWludDggQ09WQVJJQU5DRV9UWVBFX0RJQUdPTkFMX0tOT1dOPTIKdWludDggQ09WQVJJQU5DRV9UWVBFX0tOT1dOPTMKc3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCnNlbnNvcl9tc2dzL05hdlNhdFN0YXR1cyBzdGF0dXMKICBpbnQ4IFNUQVRVU19OT19GSVg9LTEKICBpbnQ4IFNUQVRVU19GSVg9MAogIGludDggU1RBVFVTX1NCQVNfRklYPTEKICBpbnQ4IFNUQVRVU19HQkFTX0ZJWD0yCiAgdWludDE2IFNFUlZJQ0VfR1BTPTEKICB1aW50MTYgU0VSVklDRV9HTE9OQVNTPTIKICB1aW50MTYgU0VSVklDRV9DT01QQVNTPTQKICB1aW50MTYgU0VSVklDRV9HQUxJTEVPPTgKICBpbnQ4IHN0YXR1cwogIHVpbnQxNiBzZXJ2aWNlCmZsb2F0NjQgbGF0aXR1ZGUKZmxvYXQ2NCBsb25naXR1ZGUKZmxvYXQ2NCBhbHRpdHVkZQpmbG9hdDY0WzldIHBvc2l0aW9uX2NvdmFyaWFuY2UKdWludDggcG9zaXRpb25fY292YXJpYW5jZV90eXBlCgo="
+  __md5_sum__ = "2d3a8cd499b9b4a0249fb98fd05cfa48"
+
+  COVARIANCE_TYPE_UNKNOWN: Final[uint8] = 0
+  COVARIANCE_TYPE_APPROXIMATED: Final[uint8] = 1
+  COVARIANCE_TYPE_DIAGONAL_KNOWN: Final[uint8] = 2
+  COVARIANCE_TYPE_KNOWN: Final[uint8] = 3
+  header: Header
+  status: NavSatStatus
+  latitude: float64
+  longitude: float64
+  altitude: float64
+  position_covariance: Annotated[List[float64], 9, 0]
+  position_covariance_type: uint8

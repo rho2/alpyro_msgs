@@ -1,0 +1,12 @@
+from alpyro_msgs import RosMessage
+from alpyro_msgs.std_msgs.header import Header
+from alpyro_msgs.geometry_msgs.accel import Accel
+
+
+class AccelStamped(RosMessage):
+  __msg_typ__ = "geometry_msgs/AccelStamped"
+  __msg_def__ = "c3RkX21zZ3MvSGVhZGVyIGhlYWRlcgogIHVpbnQzMiBzZXEKICB0aW1lIHN0YW1wCiAgc3RyaW5nIGZyYW1lX2lkCmdlb21ldHJ5X21zZ3MvQWNjZWwgYWNjZWwKICBnZW9tZXRyeV9tc2dzL1ZlY3RvcjMgbGluZWFyCiAgICBmbG9hdDY0IHgKICAgIGZsb2F0NjQgeQogICAgZmxvYXQ2NCB6CiAgZ2VvbWV0cnlfbXNncy9WZWN0b3IzIGFuZ3VsYXIKICAgIGZsb2F0NjQgeAogICAgZmxvYXQ2NCB5CiAgICBmbG9hdDY0IHoKCg=="
+  __md5_sum__ = "d8a98a5d81351b6eb0578c78557e7659"
+
+  header: Header
+  accel: Accel
