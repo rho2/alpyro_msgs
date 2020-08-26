@@ -1,7 +1,7 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.actionlib.twointsactiongoal import TwoIntsActionGoal
 from alpyro_msgs.actionlib.twointsactionfeedback import TwoIntsActionFeedback
+from alpyro_msgs.actionlib.twointsactiongoal import TwoIntsActionGoal
 from alpyro_msgs.actionlib.twointsactionresult import TwoIntsActionResult
 
 

@@ -1,8 +1,8 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.control_msgs.pointheadactionresult import PointHeadActionResult
-from alpyro_msgs.control_msgs.pointheadactiongoal import PointHeadActionGoal
 from alpyro_msgs.control_msgs.pointheadactionfeedback import PointHeadActionFeedback
+from alpyro_msgs.control_msgs.pointheadactiongoal import PointHeadActionGoal
+from alpyro_msgs.control_msgs.pointheadactionresult import PointHeadActionResult
 
 
 class PointHeadAction(RosMessage):

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 docker build . -t alpyro_gen:latest
 

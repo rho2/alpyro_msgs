@@ -2,8 +2,8 @@ from typing import List
 from typing_extensions import Annotated
 from typing import Final
 from alpyro_msgs import RosMessage, boolean, uint32, uint8
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.sensor_msgs.pointfield import PointField
+from alpyro_msgs.std_msgs.header import Header
 
 
 class PointCloud2(RosMessage):
@@ -18,5 +18,5 @@ class PointCloud2(RosMessage):
   is_bigendian: boolean
   point_step: uint32
   row_step: uint32
-  data: Annotated[List[uint8], 0, 0]
+  data: Annotated[bytes, 0, 0]
   is_dense: boolean

@@ -1,8 +1,8 @@
 from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage, duration
-from alpyro_msgs.trajectory_msgs.jointtrajectory import JointTrajectory
 from alpyro_msgs.control_msgs.jointtolerance import JointTolerance
+from alpyro_msgs.trajectory_msgs.jointtrajectory import JointTrajectory
 
 
 class FollowJointTrajectoryGoal(RosMessage):

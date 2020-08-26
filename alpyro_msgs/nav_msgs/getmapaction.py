@@ -3,8 +3,8 @@ from typing_extensions import Annotated
 from typing import Final
 from alpyro_msgs import RosMessage
 from alpyro_msgs.nav_msgs.getmapactionfeedback import GetMapActionFeedback
-from alpyro_msgs.nav_msgs.getmapactionresult import GetMapActionResult
 from alpyro_msgs.nav_msgs.getmapactiongoal import GetMapActionGoal
+from alpyro_msgs.nav_msgs.getmapactionresult import GetMapActionResult
 
 
 class GetMapAction(RosMessage):

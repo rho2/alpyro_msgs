@@ -10,4 +10,4 @@ class UInt8MultiArray(RosMessage):
   __md5_sum__ = "82373f1612381bb6ee473b5cd6f5d89c"
 
   layout: MultiArrayLayout
-  data: Annotated[List[uint8], 0, 0]
+  data: Annotated[bytes, 0, 0]

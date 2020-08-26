@@ -1,8 +1,8 @@
 from typing import Final
 from alpyro_msgs import RosMessage
+from alpyro_msgs.actionlib_msgs.goalstatus import GoalStatus
 from alpyro_msgs.control_msgs.grippercommandfeedback import GripperCommandFeedback
 from alpyro_msgs.std_msgs.header import Header
-from alpyro_msgs.actionlib_msgs.goalstatus import GoalStatus
 
 
 class GripperCommandActionFeedback(RosMessage):

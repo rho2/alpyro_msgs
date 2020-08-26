@@ -1,7 +1,7 @@
 from alpyro_msgs import RosMessage
 from alpyro_msgs.actionlib_msgs.goalid import GoalID
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.actionlib_tutorials.fibonaccigoal import FibonacciGoal
+from alpyro_msgs.std_msgs.header import Header
 
 
 class FibonacciActionGoal(RosMessage):

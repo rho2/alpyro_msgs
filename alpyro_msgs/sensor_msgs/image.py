@@ -15,4 +15,4 @@ class Image(RosMessage):
   encoding: string
   is_bigendian: uint8
   step: uint32
-  data: Annotated[List[uint8], 0, 0]
+  data: Annotated[bytes, 0, 0]

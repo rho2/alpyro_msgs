@@ -2,8 +2,8 @@ from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage
 from alpyro_msgs.actionlib_msgs.goalid import GoalID
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.control_msgs.followjointtrajectorygoal import FollowJointTrajectoryGoal
+from alpyro_msgs.std_msgs.header import Header
 
 
 class FollowJointTrajectoryActionGoal(RosMessage):

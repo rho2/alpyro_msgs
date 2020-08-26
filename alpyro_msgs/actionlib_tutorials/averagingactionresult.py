@@ -1,8 +1,8 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.actionlib_msgs.goalstatus import GoalStatus
 from alpyro_msgs.actionlib_tutorials.averagingresult import AveragingResult
+from alpyro_msgs.std_msgs.header import Header
 
 
 class AveragingActionResult(RosMessage):

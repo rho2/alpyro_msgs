@@ -1,7 +1,7 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.actionlib.testactiongoal import TestActionGoal
 from alpyro_msgs.actionlib.testactionfeedback import TestActionFeedback
+from alpyro_msgs.actionlib.testactiongoal import TestActionGoal
 from alpyro_msgs.actionlib.testactionresult import TestActionResult
 
 

@@ -1,9 +1,9 @@
 from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.geometry_msgs.point32 import Point32
 from alpyro_msgs.sensor_msgs.channelfloat32 import ChannelFloat32
+from alpyro_msgs.std_msgs.header import Header
 
 
 class PointCloud(RosMessage):

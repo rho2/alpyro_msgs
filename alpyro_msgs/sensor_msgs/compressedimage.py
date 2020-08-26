@@ -11,4 +11,4 @@ class CompressedImage(RosMessage):
 
   header: Header
   format: string
-  data: Annotated[List[uint8], 0, 0]
+  data: Annotated[bytes, 0, 0]

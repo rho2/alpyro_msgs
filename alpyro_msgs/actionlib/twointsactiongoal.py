@@ -1,7 +1,7 @@
 from alpyro_msgs import RosMessage
+from alpyro_msgs.actionlib.twointsgoal import TwoIntsGoal
 from alpyro_msgs.actionlib_msgs.goalid import GoalID
 from alpyro_msgs.std_msgs.header import Header
-from alpyro_msgs.actionlib.twointsgoal import TwoIntsGoal
 
 
 class TwoIntsActionGoal(RosMessage):

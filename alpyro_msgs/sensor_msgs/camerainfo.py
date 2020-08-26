@@ -1,8 +1,8 @@
 from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage, float64, string, uint32
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.sensor_msgs.regionofinterest import RegionOfInterest
+from alpyro_msgs.std_msgs.header import Header
 
 
 class CameraInfo(RosMessage):

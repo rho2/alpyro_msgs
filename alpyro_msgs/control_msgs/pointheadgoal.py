@@ -1,6 +1,6 @@
 from alpyro_msgs import RosMessage, duration, float64, string
-from alpyro_msgs.geometry_msgs.vector3 import Vector3
 from alpyro_msgs.geometry_msgs.pointstamped import PointStamped
+from alpyro_msgs.geometry_msgs.vector3 import Vector3
 
 
 class PointHeadGoal(RosMessage):

@@ -1,6 +1,6 @@
 from alpyro_msgs import RosMessage
-from alpyro_msgs.geometry_msgs.quaternion import Quaternion
 from alpyro_msgs.geometry_msgs.point import Point
+from alpyro_msgs.geometry_msgs.quaternion import Quaternion
 
 
 class Pose(RosMessage):

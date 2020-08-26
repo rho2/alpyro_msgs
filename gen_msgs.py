@@ -61,9 +61,8 @@ def gen_pkg(pkg: str):
             if "=" in msg_def:
                 print(f"from typing import Final", file=out)
             print(f"from alpyro_msgs import {', '.join(sorted(simple_types))}", file=out)
-            for p in packages:
+            for p in sorted(packages):
                 pkg, _, cls = p.partition(".")
-                print("  ", p)
 
                 print(f"from alpyro_msgs.{pkg}.{cls.lower()} import {cls}", file=out)
 
@@ -79,7 +78,10 @@ def gen_pkg(pkg: str):
                 if "[" in typ:
                     base, _, size = typ[:-1].partition("[")
                     s = int(size) if size else 0
-                    typ = f"Annotated[List[{base}], {s}, 0]"
+                    if base == "uint8":
+                        typ = f"Annotated[bytes, {s}, 0]"
+                    else:
+                        typ = f"Annotated[List[{base}], {s}, 0]"
                 if "=" in name:
                     name, _, val = name.partition("=")
                     if typ == "string":

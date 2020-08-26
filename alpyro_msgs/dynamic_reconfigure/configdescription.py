@@ -1,8 +1,8 @@
 from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage
-from alpyro_msgs.dynamic_reconfigure.group import Group
 from alpyro_msgs.dynamic_reconfigure.config import Config
+from alpyro_msgs.dynamic_reconfigure.group import Group
 
 
 class ConfigDescription(RosMessage):

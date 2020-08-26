@@ -2,8 +2,8 @@ from typing import List
 from typing_extensions import Annotated
 from typing import Final
 from alpyro_msgs import RosMessage, uint32
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.sensor_msgs.pointcloud2 import PointCloud2
+from alpyro_msgs.std_msgs.header import Header
 
 
 class PointCloud2Update(RosMessage):

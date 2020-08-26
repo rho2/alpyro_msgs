@@ -1,8 +1,8 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.control_msgs.singlejointpositionactionresult import SingleJointPositionActionResult
-from alpyro_msgs.control_msgs.singlejointpositionactiongoal import SingleJointPositionActionGoal
 from alpyro_msgs.control_msgs.singlejointpositionactionfeedback import SingleJointPositionActionFeedback
+from alpyro_msgs.control_msgs.singlejointpositionactiongoal import SingleJointPositionActionGoal
+from alpyro_msgs.control_msgs.singlejointpositionactionresult import SingleJointPositionActionResult
 
 
 class SingleJointPositionAction(RosMessage):

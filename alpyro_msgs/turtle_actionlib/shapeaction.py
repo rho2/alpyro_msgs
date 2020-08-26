@@ -1,8 +1,8 @@
 from typing import Final
 from alpyro_msgs import RosMessage
 from alpyro_msgs.turtle_actionlib.shapeactionfeedback import ShapeActionFeedback
-from alpyro_msgs.turtle_actionlib.shapeactionresult import ShapeActionResult
 from alpyro_msgs.turtle_actionlib.shapeactiongoal import ShapeActionGoal
+from alpyro_msgs.turtle_actionlib.shapeactionresult import ShapeActionResult
 
 
 class ShapeAction(RosMessage):

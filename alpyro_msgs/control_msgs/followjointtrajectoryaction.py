@@ -3,8 +3,8 @@ from typing_extensions import Annotated
 from typing import Final
 from alpyro_msgs import RosMessage
 from alpyro_msgs.control_msgs.followjointtrajectoryactionfeedback import FollowJointTrajectoryActionFeedback
-from alpyro_msgs.control_msgs.followjointtrajectoryactionresult import FollowJointTrajectoryActionResult
 from alpyro_msgs.control_msgs.followjointtrajectoryactiongoal import FollowJointTrajectoryActionGoal
+from alpyro_msgs.control_msgs.followjointtrajectoryactionresult import FollowJointTrajectoryActionResult
 
 
 class FollowJointTrajectoryAction(RosMessage):

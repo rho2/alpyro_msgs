@@ -1,6 +1,6 @@
 from alpyro_msgs import RosMessage
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.geometry_msgs.point import Point
+from alpyro_msgs.std_msgs.header import Header
 
 
 class PointStamped(RosMessage):

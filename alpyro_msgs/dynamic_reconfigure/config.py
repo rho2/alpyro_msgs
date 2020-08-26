@@ -2,10 +2,10 @@ from typing import List
 from typing_extensions import Annotated
 from alpyro_msgs import RosMessage
 from alpyro_msgs.dynamic_reconfigure.boolparameter import BoolParameter
-from alpyro_msgs.dynamic_reconfigure.strparameter import StrParameter
 from alpyro_msgs.dynamic_reconfigure.doubleparameter import DoubleParameter
 from alpyro_msgs.dynamic_reconfigure.groupstate import GroupState
 from alpyro_msgs.dynamic_reconfigure.intparameter import IntParameter
+from alpyro_msgs.dynamic_reconfigure.strparameter import StrParameter
 
 
 class Config(RosMessage):

@@ -2,8 +2,8 @@ from typing import List
 from typing_extensions import Annotated
 from typing import Final
 from alpyro_msgs import RosMessage, float64, uint8
-from alpyro_msgs.std_msgs.header import Header
 from alpyro_msgs.sensor_msgs.navsatstatus import NavSatStatus
+from alpyro_msgs.std_msgs.header import Header
 
 
 class NavSatFix(RosMessage):

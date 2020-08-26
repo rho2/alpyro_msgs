@@ -1,7 +1,7 @@
 from typing import Final
 from alpyro_msgs import RosMessage
-from alpyro_msgs.control_msgs.grippercommandactiongoal import GripperCommandActionGoal
 from alpyro_msgs.control_msgs.grippercommandactionfeedback import GripperCommandActionFeedback
+from alpyro_msgs.control_msgs.grippercommandactiongoal import GripperCommandActionGoal
 from alpyro_msgs.control_msgs.grippercommandactionresult import GripperCommandActionResult
 
 
